@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 我的Blog
+title: Wenfeng's Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>最新章</p>
+<p>New Chapater</p>
 <ul>
 　　{% for post in site.posts %}
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
