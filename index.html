@@ -3,9 +3,9 @@ layout: default
 title: Wenfeng's Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>New Chapater</p>
+<p>Article List</p>
 <ul>
-　　{% for post in site.posts %}
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　{% endfor %}
+  {% for post in site.posts %}
+    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
 </ul>
